@@ -19,6 +19,14 @@ module.exports = {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
   },
+  overrides: [
+    {
+      files: ['**/*.tsx'],
+      rules: {
+        "react/prop-types": "off"
+      }
+    },
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -30,6 +38,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/camelcase": "off",
+    "react/jsx-props-no-spreading": "off",
     "linebreak-style": "off",
     "prettier/prettier": [
       "error",

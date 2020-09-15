@@ -1,0 +1,31 @@
+@import "../../../index.scss";
+.loading-spinner {
+  position: relative;
+  
+  &::before {
+        animation: 1.5s linear infinite spinner;
+        animation-play-state: inherit;
+        border: solid 5px #cfd0d1;
+        border-bottom-color: $normal-blue;
+        border-radius: 50%;
+        content: "";
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate3d(-50%, -50%, 0);
+        will-change: transform;
+      
+  }
+ 
+}
+
+@keyframes spinner {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }    
