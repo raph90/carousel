@@ -10,9 +10,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -15rem;
-  height: 44rem;
+  height: $section-height;
   font-size: 3.2rem;
   position: relative;
+
+  @media screen and (max-width: 1000px){
+       background-position: 0 0; 
+      }
 
   &::after {
     content: "";
@@ -31,9 +35,13 @@
     align-items: flex-start;
     justify-content: space-evenly;
     top: 50%;
-    left: 20%;
+    left: calc((100vw - 1080px) / 2);
     transform: translateY(-50%);
       color: white;
+
+      @media screen and (max-width: 1080px){
+        left: 1rem;
+      }
 
     &__title {
       font-size: 3.4rem;
@@ -55,7 +63,7 @@
       display: inline-block;
       color: inherit;
       background-color: $normal_blue;
-      padding: 2rem 3rem;
+      padding: 1.5rem 3rem;
       border-radius: .4rem;
       
 
