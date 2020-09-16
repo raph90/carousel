@@ -1,0 +1,17 @@
+@import "../../index.scss";
+.button {
+  margin-top: 1rem;
+  display: inline-block;
+  color: inherit;
+  background-color: $normal_blue;
+  padding: 1.5rem 3rem;
+  border-radius: 0.4rem;
+
+  &.txt-white {
+    color: white;
+  }
+
+  &.bg-white {
+    background-color: white;
+  }
+}

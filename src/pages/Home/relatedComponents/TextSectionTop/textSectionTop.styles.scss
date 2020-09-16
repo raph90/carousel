@@ -1,0 +1,37 @@
+@import "../../../../index.scss";
+.textSectionTop {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    color: $grey-mid-lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+    &--imageSection {
+      background-image: url("../../../../assets/chairs.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &--textSection {
+      padding-right: 2rem;
+    }
+
+    &__button {
+      margin-top: 1rem;
+      display: inline-block;
+      color: inherit;
+      background-color: $normal_blue;
+      padding: 1.5rem 3rem;
+      border-radius: 0.4rem;
+      color: white;
+    }
+  }
+}
