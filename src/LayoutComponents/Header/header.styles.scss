@@ -1,18 +1,17 @@
+@import "../../index.scss";
 .header {
   width: 100%;
   height: 6rem;
   background-color: white;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: $border-layout;
 
   &__container {
     margin: 0 auto;
     height: 100%;
-    padding: 0 1rem;
+    padding: 0 5rem;
     max-width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-
-

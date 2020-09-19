@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+// variables
+$border-layout: 1px solid #e5e5e5;
+//HEIGHT
+$section-height: 36rem;
+$section-top-bottom-padding: 5rem;
+// greys
+$grey-mid: #353535;
+$grey-mid-lighter: #555555;
+$grey-mid-even-lighter: #888888;
+$grey-darker: #313131;
+$grey-light: #efefef;
 
+$light-blue: rgba(81, 202, 232, 0.3);
+$light-blue-darker: rgba(81, 202, 232, 0.5);
+
+$normal-blue: #337ab7;
 * {
   box-sizing: border-box;
 }
@@ -45,6 +60,7 @@ body {
   & p {
     font-size: 1rem;
     line-height: 2rem;
+    color: $grey-mid;
   }
 
   & ul {
@@ -57,18 +73,3 @@ body {
     margin-bottom: 1.2rem;
   }
 }
-
-// variables
-//HEIGHT
-$section-height: 36rem;
-$section-top-bottom-padding: 5rem;
-// greys
-$grey-mid: #353535;
-$grey-mid-lighter: #555555;
-$grey-darker: #313131;
-$grey-light: #efefef;
-
-$light-blue: rgba(81, 202, 232, 0.3);
-$light-blue-darker: rgba(81, 202, 232, 0.5);
-
-$normal-blue: #337ab7;

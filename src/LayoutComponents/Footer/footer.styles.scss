@@ -1,0 +1,16 @@
+@import "../../index.scss";
+footer {
+  height: 6rem;
+  border-top: $border-layout;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $grey-mid-even-lighter;
+  font-size: 1rem;
+
+  & a {
+    color: inherit;
+  }
+}
