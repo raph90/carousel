@@ -39,13 +39,12 @@
     align-items: flex-start;
     justify-content: space-evenly;
     top: 50%;
-    left: calc((100vw - 1080px) / 2);
-    transform: translateY(-50%);
+    padding: 5rem;
+    left: 50%;
+    width: calc(100% - 10rem);
+    max-width: 1080px;
+    transform: translate(-50%, -50%);
     color: white;
-
-    @media screen and (max-width: 1080px) {
-      left: 1rem;
-    }
 
     &__title {
       font-size: 3.4rem;

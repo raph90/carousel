@@ -1,0 +1,28 @@
+.three-col {
+  &__container {
+    justify-items: center;
+
+    &--title {
+      text-align: center;
+      & h3 {
+        margin-bottom: 1rem;
+      }
+      margin-bottom: 2rem;
+    }
+    &--text {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__textBlock {
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

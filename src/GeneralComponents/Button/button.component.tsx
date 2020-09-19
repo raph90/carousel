@@ -5,14 +5,6 @@ export interface ButtonProps {
   classes?: string[];
 }
 
-export const mergeClassNames = (classes: string[]) => {
-  let returnStr = "";
-  classes.forEach((str) => {
-    returnStr = `${returnStr} ${str}`;
-  });
-  return returnStr;
-};
-
 const Button: FC<ButtonProps> = (props) => {
   const classes = props.classes || [];
   return (

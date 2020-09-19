@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import "./main-container.styles.scss";
 
 const MainContainer: React.FC = (props) => {
