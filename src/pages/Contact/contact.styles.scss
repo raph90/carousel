@@ -1,0 +1,16 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  &__swirly {
+    right: calc((100vw - 1080px / 2));
+    position: absolute;
+    height: 700px;
+    width: auto;
+    top: 0;
+    z-index: -1;
+
+    @media screen and (max-width: 1080px) {
+      right: 5rem;
+    }
+  }
+}

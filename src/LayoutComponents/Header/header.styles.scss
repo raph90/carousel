@@ -1,6 +1,7 @@
 @import "../../index.scss";
 .header {
   width: 100%;
+  position: absolute;
   height: 6rem;
   background-color: white;
   border-bottom: $border-layout;

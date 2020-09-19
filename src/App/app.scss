@@ -1,5 +1,9 @@
 .app {
+  position: relative;
 }
 
-
-
+main {
+  padding: 6rem 0;
+  top: 6rem;
+  min-height: 100vh;
+}
