@@ -146,6 +146,7 @@ const Contact: FC = () => {
               index < 10 ? `0${index.toString()}` : index.toString()
             }`}
             id={`phone_${index}`}
+            key={`phone_${index}`}
             optional
           />
         );

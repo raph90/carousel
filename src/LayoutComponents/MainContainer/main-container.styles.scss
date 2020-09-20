@@ -3,5 +3,8 @@
   max-width: 1080px;
   margin: 0 auto;
   padding: $section-top-bottom-padding;
+  @media screen and (max-width: 750px) {
+    padding: 2rem;
+  }
   background-size: cover;
 }

@@ -1,4 +1,4 @@
-import React, { FC, ComponentProps } from "react";
+import React, { FC } from "react";
 import "./button.styles.scss";
 
 export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0);
+
   width: 50%;
   margin-bottom: 10rem;
   & h3 {
@@ -9,6 +11,14 @@
   }
   & p {
     margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
   }
 
   &__swirly {

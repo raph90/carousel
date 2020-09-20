@@ -3,6 +3,8 @@ import MainContainer from "../../../../LayoutComponents/MainContainer/main-conta
 import "./textSectionTop.styles.scss";
 import Button from "../../../../GeneralComponents/Button/button.component";
 
+import Chairs from "../../../../assets/chairs.jpg";
+
 const TextSectionTop: React.FC = () => {
   return (
     <MainContainer>
@@ -26,9 +28,11 @@ const TextSectionTop: React.FC = () => {
           </ul>
           <Button classes={["txt-white"]}>Learn more</Button>
         </div>
-        <div className="textSectionTop__content textSectionTop__content--imageSection">
-          <h1>Image</h1>
-        </div>
+        <img
+          src={Chairs}
+          alt="chairs in foyer"
+          className="textSectionTop__content textSectionTop__content--imageSection"
+        />
       </div>
     </MainContainer>
   );

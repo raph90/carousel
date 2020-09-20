@@ -1,7 +1,5 @@
 import React from "react";
-import MainContainer from "../../../../LayoutComponents/MainContainer/main-container.component";
 import "./heroImage.styles.scss";
-import BlueNoGlasses from "../../../../assets/blue_glasses_no_hat.jpg";
 import Button from "../../../../GeneralComponents/Button/button.component";
 
 const HeroImageSection = () => {

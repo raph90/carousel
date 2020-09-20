@@ -1,4 +1,4 @@
-import React, { FC, ChangeEvent } from "react";
+import React, { ChangeEvent } from "react";
 import "./Input.styles.scss";
 import { FormSubmission } from "../../interfaces";
 

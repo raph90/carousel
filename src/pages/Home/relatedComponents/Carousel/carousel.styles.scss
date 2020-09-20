@@ -15,7 +15,7 @@
   position: relative;
 
   @media screen and (max-width: 1000px) {
-    background-position: 0 0;
+    background-position: center center;
   }
 
   &::after {
@@ -68,6 +68,13 @@
       background-color: $normal_blue;
       padding: 1.5rem 3rem;
       border-radius: 0.4rem;
+      text-decoration: none;
+
+      @media screen and (max-width: 750px) {
+        text-align: center;
+        width: 100%;
+        font-size: 1.4rem;
+      }
     }
   }
 }

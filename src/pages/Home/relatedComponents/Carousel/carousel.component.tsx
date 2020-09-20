@@ -1,17 +1,14 @@
 import React, { FC } from "react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, { Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "./carousel.styles.scss";
+import { Link } from "react-router-dom";
 import BlueGlasses from "../../../../assets/blue_glasses.jpg";
-import useImage, {
-  FetchedImage,
-  ImageInterface,
-  FetchLoading,
-} from "../../../../utils/useImage";
+import useImage, { FetchedImage } from "../../../../utils/useImage";
 import LoadingSpinner from "../../../../utils/components/LoadingSpinner/LoadingSpinner.component";
 
 SwiperCore.use([Pagination, A11y]);
@@ -41,9 +38,9 @@ const Carousel: FC = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          {slides.map((slide: FetchedImage) => {
+          {slides.map((slide: FetchedImage, index: number) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={slide.Title + Math.random()}>
                 <div
                   className="slide"
                   style={{
@@ -56,7 +53,9 @@ const Carousel: FC = () => {
                 <div className="slide__titles">
                   <h1 className="slide__titles__title">{slide.Title}</h1>
                   <h3 className="slide__titles__subtitle">{slide.Subtitle}</h3>
-                  <button className="slide__titles__button">Contact Us</button>
+                  <Link to="/contact-us" className="slide__titles__button">
+                    Contact Us
+                  </Link>
                 </div>
               </SwiperSlide>
             );

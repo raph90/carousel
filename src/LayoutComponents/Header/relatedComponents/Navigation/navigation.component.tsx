@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import "./navigation.styles.scss";
 import { Link } from "react-router-dom";
 
-const Navigati: FC = () => {
+const Navigation: FC = () => {
   return (
     <div className="navigation">
       <Link className="navigation__link" to="/">
@@ -21,4 +21,4 @@ const Navigati: FC = () => {
   );
 };
 
-export default Navigati;
+export default Navigation;

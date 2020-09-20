@@ -13,6 +13,9 @@ footer {
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 750px) {
+      justify-content: center;
+    }
     align-items: center;
     color: $grey-mid-even-lighter;
     font-size: 1rem;
