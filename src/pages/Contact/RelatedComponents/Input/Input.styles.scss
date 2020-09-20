@@ -1,0 +1,49 @@
+@import "../../../../index.scss";
+
+.input {
+  & input,
+  textArea {
+    width: 100%;
+    background-color: $grey-lighter;
+    border: 1px solid $grey-light;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    transition: all 0.2s;
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: $light-blue-darker;
+    }
+  }
+  &.fullWidth {
+    grid-column: 1 / 3;
+  }
+  & input {
+    height: 4rem;
+  }
+  & textArea {
+    resize: none;
+    height: 12rem;
+  }
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  &__label {
+    &--optional {
+      font-style: italic;
+      color: $grey-mid-even-lighter;
+    }
+
+    &__additional {
+      color: $grey-mid-even-lighter;
+    }
+  }
+}

@@ -3,19 +3,48 @@
   margin-top: 1rem;
   display: inline-block;
   color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $normal_blue;
-  padding: 1.5rem 3rem;
+  &:hover {
+    background-color: darken($normal_blue, 10%);
+  }
+  height: 4rem;
   border-radius: 0.4rem;
+  padding: 0 2rem;
+
+  & img {
+    height: 50%;
+  }
 
   &.txt-white {
     color: white;
   }
 
+  &.split {
+    justify-content: space-between;
+  }
+
   &.txt-blue {
-    color: $normal_blue;
+    color: $normal-blue;
+
+    &--darker {
+      color: $normal-blue-darker;
+    }
   }
 
   &.bg-white {
     background-color: white;
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+
+  &.bg-very-light-blue {
+    background-color: $light-blue;
+    &:hover {
+      background-color: darken($light-blue, 10%);
+    }
   }
 }

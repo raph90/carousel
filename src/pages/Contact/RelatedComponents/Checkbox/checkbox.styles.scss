@@ -1,0 +1,65 @@
+@import "../../../../index.scss";
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  height: 2rem;
+
+  & p {
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  & input:checked ~ .checkbox__span:after {
+    display: block;
+  }
+
+  &__span {
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    background-color: #eee;
+    & :after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+  &:hover input ~ .checkbox__span {
+    background-color: #ccc;
+  }
+
+  & input:checked ~ .checkbox__span {
+    background-color: $light_blue;
+  }
+
+  &__span::after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
