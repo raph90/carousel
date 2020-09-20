@@ -1,0 +1,40 @@
+@import "../../../../index.scss";
+.feedback {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 4px;
+  grid-column: 1/3;
+
+  & img {
+    height: 2rem;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    background-color: $success;
+    border-radius: 50%;
+  }
+
+  &__message {
+    text-align: center;
+  }
+
+  &--success {
+    background-color: $success-light;
+    height: 20rem;
+    justify-content: space-evenly;
+  }
+
+  &--failure {
+    background-color: $error-light;
+    height: 10rem;
+    justify-content: center;
+  }
+}

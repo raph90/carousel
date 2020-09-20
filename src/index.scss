@@ -18,7 +18,9 @@ $light-blue-darker: rgba(81, 202, 232, 0.5);
 $normal-blue: #337ab7;
 $normal-blue-darker: #2669a3;
 $error: #d94a62;
-$success: #27b050;
+$error-light: rgba(217, 74, 98, 0.3);
+$success: rgba(53, 184, 88, 1);
+$success-light: rgba(53, 184, 88, 0.3);
 * {
   box-sizing: border-box;
 }
